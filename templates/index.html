@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href={{url_for('static' , filename = 'css/normalize.css')}}>
+        <link rel="stylesheet" href={{url_for('static' , filename = 'css/grid.css')}}>
+        <link rel='stylesheet' href={{url_for('static' , filename = 'css/style.css')}}>
+
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet" type='text/css'>
+        <title>Sedimentary Rocks Classification WebApp</title>
+        <meta name="keywords" content="cutom file input, styling, label, cross-browser, accessible, input type file" />
+
+		<style>
+			.content {
+			  max-width: 500px;
+			  margin: auto;
+			  }
+			.bg-img{
+				width: 100%;
+				height: 100vh;
+				background-image:linear-gradient(rgba(0, 0, 0, 0.71),rgba(0, 0, 0, 0.7)),url('static/css/front.jpg');
+				background-size: cover;
+				background-position: center;
+			}
+
+		</style>
+
+
+    </head>
+
+    <body>
+
+	    <div class="bg-img" style="background-image: url('/static/css/bg-index.png');">
+            <nav>
+                <ul style = "padding: 2%; display: flex; list-style-type:none;" class = "main-nav">
+                    <li style = "padding-right: 5%; color: white; font-size: 20pt"><a style="color: white;" href ="/"><strong>ROCKLENS</strong></a></li>
+                    <li style = "padding-right: 5%; color: white; font-size: 16pt; padding-top: 0.2%;"><a style="color: white;" href ="/"><b>Home</b></a></li>
+                    <li style = "padding-right: 5%; color: white; font-size: 16pt; padding-top: 0.2%;"><a style="color: white;" href ="#about"><b>About</b></a></li>
+                    <li style = "padding-right: 5%; color: white; font-size: 16pt; padding-top: 0.2%;"><a style="color: white;" href ="/tools"><b>Tools</b></a></li>
+                    <li style = "padding-right: 5%; color: white; font-size: 16pt; padding-top: 0.2%; "><a style="color: white;" href ="/plans"><b>Plans</b></a></li>
+                    <li style = "padding-right: 5%; color: white; font-size: 16pt; padding-top: 0.2%; "><a style="color: white;" href ="/events"><b>Events</b></a></li>
+                </ul>
+            </nav>
+
+<!--                        <img style="margin-left: 63%; margin-top: 7%; height: 270pt; width: auto; position: absolute;" src="/static/css/rock.png">-->
+                        <h1 style = "padding-left: 10%; padding-top: 10%; color: white; font-size: 60pt"><b>ROCK LENS</b></h1>
+                        <p style = "padding-left: 10%; color: white; font-size: 25pt">The only tool you need to learn whats around you</p>
+
+                        <a href="/tools" style="color: white;" >
+                            <button class="btn btn-lg" style="margin-left: 10%; margin-top: 2%; background-color: #B58963; height: 5%; width: 30%;"><b>Lets Go!</b></button>
+                        </a>
+
+
+	    </div>
+
+        <div style="background-color: white; margin-bottom: 5%; margin-top: 5%" id="about">
+            <div style = "width : 100%; padding-top : 3%; padding-bottom : 4%;">
+                <div class = "header-content">
+                    <h6 ><span class="header-content-text"><b>About Rock Lens</b></span></h6>
+                </div>
+            </div>
+            <div style = "width : 100%;  padding-bottom : 3%;">
+                <div class = "header-content">
+                    <img src="">
+                    <p style="text-align: center; color: #B58963; font-size: 18pt"><b><i>Rocklens merupakan situs untuk mengidentifikasi sifat fisis serta jenis batuan melalui <br>image processing sebagai sarana e-learning bagi mahasiswa Geosains dan survei <br> Geologi jarak jauh di masa pandemi.</i></b></p>
+                </div>
+            </div>
+            <div style = "width : 100%; padding-bottom : 3%;">
+                <div class = "header-content">
+                    <div class="row">
+                    <img style="height: 100pt; width: auto; position: absolute; margin-left: -2%" src="/static/css/easy.png">
+                    </div>
+                    <div class="row">
+                    <p style="margin-left: 25%; margin-top: 300%; text-align: center; color: #B58963; font-size: 18pt"><b>Easy</b></p>
+                    </div>
+                </div>
+            </div>
+            <div style = "width : 100%; padding-bottom : 3%;">
+                <div class = "header-content">
+                    <div class="row">
+                    <img style="height: 100pt; width: auto; position: absolute; margin-left: -1.5%" src="/static/css/accuracy.png">
+                    </div>
+                    <div class="row">
+                    <p style="margin-left: 12%; margin-top: 165%; text-align: center; color: #B58963; font-size: 18pt"><b>Accurate</b></p>
+                    </div>
+                </div>
+            </div>
+            <div style = "width : 100%; padding-bottom : 4%;">
+                <div class = "header-content">
+                    <div class="row">
+                    <img style="height: 100pt; width: auto; position: absolute; margin-left: -1.5%" src="/static/css/colour.png">
+                    </div>
+                    <div class="row">
+                    <p style="margin-left: 12%; margin-top: 165%; text-align: center; color: #B58963; font-size: 18pt"><b>Variative</b></p>
+                    </div>
+                </div>
+            </div>
+	    </div>
+        </div>
+    </body>
+<footer style="background-color: #3B3B3B; padding: 1%">
+    <br>
+    <p style=" text-align: center; color: #ffffff; font-size: 12pt">© 2021 Copyright: <b>Rocklens</b></p>
+</footer>
+</html>
